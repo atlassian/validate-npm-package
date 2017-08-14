@@ -1,6 +1,6 @@
 {
   "name": "validate-npm-package",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Validate a package.json file",
   "main": "index.js",
   "repository": "thejameskyle/validate-npm-package",
