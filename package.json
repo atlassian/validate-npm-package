@@ -1,0 +1,27 @@
+{
+  "name": "validate-npm-package",
+  "version": "0.0.0",
+  "description": "Validate a package.json file",
+  "main": "index.js",
+  "repository": "thejameskyle/validate-npm-package",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "bin.js"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "meow": "^3.7.0",
+    "read-pkg-up": "^2.0.0",
+    "validate-npm-package-license": "^3.0.1",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.52.0",
+    "jest": "^20.0.4"
+  }
+}
