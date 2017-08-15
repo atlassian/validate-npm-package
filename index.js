@@ -57,6 +57,7 @@ validators.description = value => {
 };
 
 validators.main = value => {
+  if (isUndefined(value)) return true;
   if (!isString(value)) return 'main must be a string';
   return true;
 };

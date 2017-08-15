@@ -52,7 +52,7 @@ test('description', () => {
 });
 
 test('main', () => {
-  error({}, 'main must be a string');
+  notError({}, 'main must be a string');
   error({ main: false }, 'main must be a string');
   notError({ main: 'index.js' }, 'main must be a string');
 });
