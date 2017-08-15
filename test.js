@@ -46,7 +46,7 @@ test('license', () => {
 });
 
 test('description', () => {
-  error({}, 'description must be a string');
+  notError({}, 'description must be a string');
   error({ description: false }, 'description must be a string');
   notError({ description: 'hi' }, 'description must be a string');
 });
