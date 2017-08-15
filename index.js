@@ -119,7 +119,7 @@ validators.scripts = value => {
 
 validators.config = value => {
   if (isUndefined(value)) return true;
-  if (!isObjectOfStrings(value)) return 'config must be an object of strings';
+  if (!isObject(value)) return 'config must be an object';
   return true;
 };
 

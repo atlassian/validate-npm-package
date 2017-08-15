@@ -113,9 +113,9 @@ test('scripts', () => {
 });
 
 test('config', () => {
-  error({ config: false }, 'config must be an object of strings');
-  error({ config: { opt: false } }, 'config must be an object of strings');
-  notError({ config: { opt: 'value' } }, 'config must be an object of strings');
+  error({ config: false }, 'config must be an object');
+  notError({ config: { opt: false } }, 'config must be an object');
+  notError({ config: { opt: 'value' } }, 'config must be an object');
 });
 
 test('engines', () => {
