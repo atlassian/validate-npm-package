@@ -52,6 +52,7 @@ validators.license = value => {
 };
 
 validators.description = value => {
+  if (isUndefined(value)) return true;
   if (!isString(value)) return 'description must be a string';
   return true;
 };
