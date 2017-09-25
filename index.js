@@ -197,7 +197,7 @@ function mergeValidation(results, validation) {
     };
   }
 
-  if (isString(validation)) {
+  if (typeof validation === 'string') {
     validation = {
       validForNewPackages: false,
       validForOldPackages: false,
@@ -224,7 +224,16 @@ function mergeValidation(results, validation) {
   return results;
 }
 
-module.exports = function isValidPkg(pkg /*: Object */) {
+/*::
+type Results = {
+  validForNewPackages: boolean,
+  validForOldPackages: boolean,
+  warnings: Array<string>,
+  errors: Array<string>,
+}
+*/
+
+module.exports = function isValidPkg(pkg /*: Object */) /*: Results */ {
   return Object.keys(validators).map(key => {
     return validators[key](pkg[key])
   }).reduce(mergeValidation, {
