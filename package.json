@@ -4,9 +4,9 @@
   "description": "Validate a package.json file",
   "main": "index.js",
   "bin": "bin.js",
-  "repository": "thejameskyle/validate-npm-package",
+  "repository": "atlassian/validate-npm-package",
   "author": "James Kyle <me@thejameskyle.com>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "files": [
     "index.js",
     "bin.js"
